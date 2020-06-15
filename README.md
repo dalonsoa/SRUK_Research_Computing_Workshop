@@ -52,6 +52,15 @@ If you already have Python, you still need to do a couple of things.
 
 ## Installing Python from scratch
 
+If you haven't used Python much - or nothing at all - chances are you want a brand new Python installation in your system. We want the newest Python version, which at the time of writing this guide is 3.8. How to do that depends on your operative system:
+
+- **Linux**: You will need to use the package manager of your distribution. For Ubuntu, this will require you to open a shell and run `sudo apt install python3`. For other distributions, it will depend... Most likely, this will not be Python 3.8, but 3.7 - or even 3.6! That's Ok as long as it is >3.4. 
+- **Windows and MacOS**: Go to [python.org](https://www.python.org), the oficial Python distribution, and download the installer appropriate for your OS. You can get Python by other means (Microsoft Store, Hombrew, MacPorts, Anaconda...). Don't bother and go to the basics. 
+
+**WARNING for WINDOWS USERS**: During the installation is absolutely essential that you **check the box that says "Add to PATH"**. Without this, your Python instalationw ill not be found.
+
+That should be it! If you open a shell and run `python --version` (or `python3 --version`) you should see the verion of Python you have just installed.
+
 
 ## Installing the dependencies
 
