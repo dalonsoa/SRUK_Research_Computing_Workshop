@@ -22,7 +22,7 @@ If time allows, at the end of the workshop we will provide tips and resources fo
 
 # Setting up the environment
 
-The aim of this workshop is to provide you with the fundamental knowledge of the tools you will need to exploit Python in your research. We want you to code along with us, to try things and ask questions whenever you don't get the expected results. Chances are that other colleagues will be on the same situation.
+The aim of this workshop is to provide you with the fundamental knowledge of the tools you will need to exploit Python in your research. We want you to code along with us, to try things and ask questions whenever you don't get the expected results. Chances are that other colleagues will be on the same situation. This document is, indeed, Lesson 0, guiding you to get ready for the course.
 
 To make this as user friendly as possible, we will use [Jupyter](https://jupyter.org). In the [lessons folder](lessons) you can find the Jupyter Notebooks we have prepared. Notebooks combine text and explanations (including equations written in Latex, if needed) with executable code and its output, being this a bunch of numbers, some texts or plots. For this reason, it is becoming quite popular in the teaching environment. The [final section of this document](#using-jupyter-lab-and-notebooks)
 
@@ -30,11 +30,36 @@ We strongly encourage you to install Python and all the relevant dependencies lo
 
 ## Without installing Python in your computer
 
+If you cannot or do not want to install Python in your computer, that's also fine. You can edit and run all the notebooks in this repository using Binder. 
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dalonsoa/SRUK_Research_Computing_Workshop/master)
+
+Do right-clik "Open in new tab" on the above badge. This will launch a remote session of Jupyter in a service called [MyBinder.org](https://mybinder.org). This is an amazing tool that let you open, edit and run notebooks in any public code repository. Launching the server might take some time depending on the number of users trying to access that particular repository and the workload of the server itself, but after a few seconds/minutes, it should be up and running. To learn how to interact with the notebooks, go to the [final section of this document](#using-jupyter-lab-and-notebooks).
+
+Using this service has some limitations:
+
+- The interface will be simpler and with less options that the one we will have runing Jupyter locally (but you will be able to do the very same things).
+- How smooth things run will depend on the stability of your internet conexion and of the server itself, so things might become slow at times or the server drop without notice. 
+- The code you write will be in a remote location. If you want to keep it, you will need to download the edited notebooks from time to time, otherwise, all changes will be lost if you disconect (voluntarily or not) from the server.
 
 ## You already have Python
 
+If you already have Python, you still need to do a couple of things.
+
+1. Make sure your Python version is 3.4 or higher. To check which python version you have, keep reading.
+2. Make sure you can access Python from the Terminal/Console/PowerShell - we'll call this with the generic name "the shell". To do so, open a shell and type `python --version`. If you get an error or a number that is not >3.4, then your python is not correctly configured (or the version is not high enough). I suggest you move to the next section. In some systems, you might need to use `python3 --version`.
+3. If you reach this point, then you can now [install the dependencies](#installing-the-dependencies)
 
 ## Installing Python from scratch
+
+
+## Installing the dependencies
+
+3. Download and unzip this repository clicking in the green button in the top right or, if you are a `git` user, clone it. 
+
+
+
+## Checking that everything works
 
 
 # Using Jupyter Lab and Notebooks
