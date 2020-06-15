@@ -26,7 +26,7 @@ The aim of this workshop is to provide you with the fundamental knowledge of the
 
 **PLEASE: Follow this instructions BEFORE the start of the course on the 27th of June and contact us via Eventbrite if you have any trouble.**
 
-To make this workshop as user friendly as possible, we will use [Jupyter](https://jupyter.org). In the [lessons folder](lessons) you can find the Jupyter Notebooks we have prepared. Notebooks combine text and explanations (including equations written in Latex, if needed) with executable code and its output, being this a bunch of numbers, some texts or plots. For this reason, it is becoming quite popular in the teaching environment. The [final section of this document](#using-jupyter-lab-and-notebooks)
+To make this workshop as user friendly as possible, we will use [Jupyter](https://jupyter.org). In the [lessons folder](lessons) you can find the Jupyter Notebooks we have prepared. Notebooks combine text and explanations (including equations written in Latex, if needed) with executable code and its output, being this a bunch of numbers, some texts or plots. For this reason, it is becoming quite popular in the teaching environment. The [final section of this document](#using-jupyter-lab-and-notebooks) show a few tips on how to interact with the notebooks.
 
 We strongly encourage you to install Python and all the relevant dependencies locally in your computer. However, if you prefer not to - at least not yet - that's OK. Keep reading to the next subsection.
 
@@ -59,7 +59,7 @@ If you haven't used Python much - or nothing at all - chances are you want a bra
 - **Linux**: You will need to use the package manager of your distribution. For Ubuntu, this will require you to open a shell and run `sudo apt install python3`. For other distributions, it will depend... Most likely, this will not be Python 3.8, but 3.7 - or even 3.6! That's Ok as long as it is >3.4. 
 - **Windows and MacOS**: Go to [python.org](https://www.python.org), the oficial Python distribution, and download the installer appropriate for your OS. You can get Python by other means (Microsoft Store, Hombrew, MacPorts, Anaconda...). Don't bother and go to the basics. 
 
-**WARNING for WINDOWS USERS**: During the installation is absolutely essential that you **check the box that says "Add to PATH"**. Without this, your Python instalationw ill not be found.
+**WARNING for WINDOWS USERS**: During the installation is absolutely essential that you **check the box that says "Add to PATH"**. Without this, your Python installation will not be found.
 
 That should be it! If you open a shell and run `python --version` (or `python3 --version`) you should see the verion of Python you have just installed.
 
@@ -74,7 +74,7 @@ git clone https://github.com/dalonsoa/SRUK_Research_Computing_Workshop.git
 ```
 
 - Now you should have all the files of the workshop in the folder `Documents/SRUK_Research_Computing_Workshop`. Enter into that folder in the shell with `cd SRUK_Research_Computing_Workshop`.
-3. This workshop will use several python packages - among others, Numpy, Pandas, Matplotlib, etc. which are indeed the whole point of the workshop. You can find this dependencies in the `requirements.txt` file. To install these dependencies just run in the shell:
+- This workshop will use several python packages - among others, Numpy, Pandas, Matplotlib, etc. which are indeed the whole point of the workshop. You can find this dependencies in the `requirements.txt` file. To install these dependencies just run in the shell:
 
 ```bash
 python -m pip install -r requirements.txt
