@@ -2,6 +2,4 @@ numpy
 matplotlib
 scipy
 pandas
-jupyter
-jupyter_contrib_nbextensions
-jupyter_nbextensions_configurator
+jupyterlab

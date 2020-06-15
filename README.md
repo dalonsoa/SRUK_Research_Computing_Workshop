@@ -22,6 +22,11 @@ If time allows, at the end of the workshop we will provide tips and resources fo
 
 # Setting up the environment
 
+The aim of this workshop is to provide you with the fundamental knowledge of the tools you will need to exploit Python in your research. We want you to code along with us, to try things and ask questions whenever you don't get the expected results. Chances are that other colleagues will be on the same situation.
+
+To make this as user friendly as possible, we will use [Jupyter](https://jupyter.org). In the [lessons folder](lessons) you can find the Jupyter Notebooks we have prepared. Notebooks combine text and explanations (including equations written in Latex, if needed) with executable code and its output, being this a bunch of numbers, some texts or plots. For this reason, it is becoming quite popular in the teaching environment. The [final section of this document](#using-jupyter-lab-and-notebooks)
+
+We strongly encourage you to install Python and all the relevant dependencies locally in your computer. However, if you prefer not to - at least not yet - that's OK. Keep reading to the next subsection.
 
 ## Without installing Python in your computer
 
@@ -32,4 +37,4 @@ If time allows, at the end of the workshop we will provide tips and resources fo
 ## Installing Python from scratch
 
 
-# Using Jupyter Notebooks
+# Using Jupyter Lab and Notebooks
