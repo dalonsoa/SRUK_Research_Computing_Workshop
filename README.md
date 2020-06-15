@@ -24,7 +24,9 @@ If time allows, at the end of the workshop we will provide tips and resources fo
 
 The aim of this workshop is to provide you with the fundamental knowledge of the tools you will need to exploit Python in your research. We want you to code along with us, to try things and ask questions whenever you don't get the expected results. Chances are that other colleagues will be on the same situation. This document is, indeed, Lesson 0, guiding you to get ready for the course.
 
-To make this as user friendly as possible, we will use [Jupyter](https://jupyter.org). In the [lessons folder](lessons) you can find the Jupyter Notebooks we have prepared. Notebooks combine text and explanations (including equations written in Latex, if needed) with executable code and its output, being this a bunch of numbers, some texts or plots. For this reason, it is becoming quite popular in the teaching environment. The [final section of this document](#using-jupyter-lab-and-notebooks)
+**PLEASE: Follow this instructions BEFORE the start of the course on the 27th of June and contact us via Eventbrite if you have any trouble.**
+
+To make this workshop as user friendly as possible, we will use [Jupyter](https://jupyter.org). In the [lessons folder](lessons) you can find the Jupyter Notebooks we have prepared. Notebooks combine text and explanations (including equations written in Latex, if needed) with executable code and its output, being this a bunch of numbers, some texts or plots. For this reason, it is becoming quite popular in the teaching environment. The [final section of this document](#using-jupyter-lab-and-notebooks)
 
 We strongly encourage you to install Python and all the relevant dependencies locally in your computer. However, if you prefer not to - at least not yet - that's OK. Keep reading to the next subsection.
 
@@ -61,14 +63,37 @@ If you haven't used Python much - or nothing at all - chances are you want a bra
 
 That should be it! If you open a shell and run `python --version` (or `python3 --version`) you should see the verion of Python you have just installed.
 
+Now you are ready to install the dependencies.
 
 ## Installing the dependencies
 
-3. Download and unzip this repository clicking in the green button in the top right or, if you are a `git` user, clone it. 
+- Download this repository by clicking in the green button in the top right and unzip somewhere you know, eg. in your Documents folder. If you are a `git` user, navigate to the Documents folder in the shell and clone it with:
 
+```bash
+git clone https://github.com/dalonsoa/SRUK_Research_Computing_Workshop.git
+```
 
+- Now you should have all the files of the workshop in the folder `Documents/SRUK_Research_Computing_Workshop`. Enter into that folder in the shell with `cd SRUK_Research_Computing_Workshop`.
+3. This workshop will use several python packages - among others, Numpy, Pandas, Matplotlib, etc. which are indeed the whole point of the workshop. You can find this dependencies in the `requirements.txt` file. To install these dependencies just run in the shell:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+There will be a lot of text printed indicating that the dependencies - those in the requirements.txt file and many others that are required by these pacakges - are being downloaded and installed. Hopefully, there will be no errors. 
 
 ## Checking that everything works
 
+To check that everything has been installed properly, the best thing is for you to try to launch a Jupter Lab session. For that, without leaving the repository folder, run:
+
+```bash
+python -m jupyter lab
+```
+
+A new tab should open in the web browser showing the Jupuyter Lab interface. If that is the case, congratulations!! You have succesfully installed all the requirements of this Workshop and have completed Lesson 0. Believe it or not, doing this has made you much wiser and proficient in Python. 
+
+In the final section of this document, we will just mention a couple of things on using Jupyter Notebooks. 
 
 # Using Jupyter Lab and Notebooks
+
+(To be Completed)
