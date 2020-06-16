@@ -4,10 +4,19 @@
 
 1. [About the workshop](#about-the-workshop)
 1. [Lesson 0: This repository](#lesson-0-this-repository)
+1. [Setting up the environment](#setting-up-the-environment)
+    1. [Without installing Python in your computer](#without-installing-python)
+    1. [You already have Python installed](#you-already-have-python)
+    1. [Installing Python from scratch](#installing-python-from-scratch)
+    1. [Installing the dependencies](#installing-the-dependencies)
+    1. [Checking that everything works](#checking-that-everything-works)
+1. [Using Jupyter Lab and Notebooks](#using-jupyter-lab-and-notebooks)
 
 # About the Workshop
 
-Welcome to this second event of the SRUK Research Computing Workshop series, devoted to Python. Python is programming language that has become one of the dominant tools in research and teaching thanks to its flexibility, simplicity, and enormous supporting community. Specifically, this hands-on workshop will cover the following content:
+Welcome to this second event of the SRUK Research Computing Workshop series, devoted to Python. Python is programming language that has become one of the dominant tools in research and teaching thanks to its flexibility, simplicity, an
+
+d enormous supporting community. Specifically, this hands-on workshop will cover the following content:
 
 - Brief introduction to the basics
 - Overview of Python packages and developing your own libraries
@@ -35,7 +44,7 @@ To make this workshop as user friendly as possible, we will use [Jupyter](https:
 
 We strongly encourage you to install Python and all the relevant dependencies locally in your computer. However, if you prefer not to - at least not yet - that's OK. Keep reading to the next subsection.
 
-## Without installing Python in your computer
+## Without installing Python
 
 If you cannot or do not want to install Python in your computer, that's also fine. You can edit and run all the notebooks in this repository using Binder. 
 
