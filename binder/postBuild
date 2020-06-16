@@ -1,0 +1,6 @@
+set -ex
+
+jupyter lab clean
+
+# Setup a workspace
+jupyter lab
