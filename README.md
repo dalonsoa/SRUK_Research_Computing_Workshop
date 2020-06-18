@@ -3,7 +3,6 @@
 # Index
 
 1. [About the workshop](#about-the-workshop)
-1. [Lesson 0: This repository](#lesson-0-this-repository)
 1. [Setting up the environment](#setting-up-the-environment)
     1. [Without installing Python in your computer](#without-installing-python)
     1. [You already have Python installed](#you-already-have-python)
@@ -34,11 +33,13 @@ Join this event if you want to…
 
 If time allows, at the end of the workshop we will provide tips and resources for those wanting to expand their knowledge on other topics such as differential equation solving, parallel computing, machine learning, and deep learning.
 
+
 # Setting up the environment
 
-The aim of this workshop is to provide you with the fundamental knowledge of the tools you will need to exploit Python in your research. We want you to code along with us, to try things and ask questions whenever you don't get the expected results. Chances are that other colleagues will be on the same situation. This document is, indeed, Lesson 0, guiding you to get ready for the course.
+**<p style="text-align: center;">Follow this instructions *BEFORE* the start of the course on the 27th of June.</p>**
+**<p style="text-align: center;">Contact us via Eventbrite if you have any trouble.</p>**
 
-**PLEASE: Follow this instructions BEFORE the start of the course on the 27th of June and contact us via Eventbrite if you have any trouble.**
+The aim of this workshop is to provide you with the fundamental knowledge of the tools you will need to exploit Python in your research. **We want you to code along with us**, to try things and ask questions whenever you don't get the expected results. Chances are that other colleagues will be on the same situation. 
 
 To make this workshop as user friendly as possible, we will use [Jupyter](https://jupyter.org). In the [lessons folder](lessons) you can find the Jupyter Notebooks we have prepared. Notebooks combine text and explanations (including equations written in Latex, if needed) with executable code and its output, being this a bunch of numbers, some texts or plots. For this reason, it is becoming quite popular in the teaching environment. The [final section of this document](#using-jupyter-lab-and-notebooks) show a few tips on how to interact with the notebooks.
 
@@ -46,15 +47,16 @@ We strongly encourage you to install Python and all the relevant dependencies lo
 
 ## Without installing Python
 
-If you cannot or do not want to install Python in your computer, that's also fine. You can edit and run all the notebooks in this repository using Binder. 
+If you cannot or do not want to install Python in your computer, that's also fine. You can edit and run all the notebooks in this repository using Binder. Do right-clik "Open in new tab" in this badge:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dalonsoa/SRUK_Research_Computing_Workshop/master?urlpath=lab)
 
-Do right-clik "Open in new tab" on the above badge. This will launch a remote session of Jupyter in a service called [MyBinder.org](https://mybinder.org). This is an amazing tool that let you open, edit and run notebooks in any public code repository. Launching the server might take some time depending on the number of users trying to access that particular repository and the workload of the server itself, but after a few seconds/minutes, it should be up and running. To learn how to interact with the notebooks, go to the [final section of this document](#using-jupyter-lab-and-notebooks).
+This will launch a remote session of Jupyter in a service called [MyBinder.org](https://mybinder.org). This is an amazing tool that let you open, edit and run notebooks in any public repository. Launching the server might take some time depending on the number of users trying to access that particular repository and the workload of the server itself, but after a few seconds/minutes, it should be up and running. To learn how to interact with the notebooks, go to the [final section of this document](#using-jupyter-lab-and-notebooks).
 
 Using this service has some limitations:
 
-- How smooth things run will depend on the stability of your internet conexion and of the server itself, so things might become slow at times or the server drop without notice. 
+- The session in Binder will expire after 10 min of inactivity, so make sure you keep interacting with it - code along!
+- How smooth things run will depend on the stability of your internet connection and of the server itself, so things might become slow at times or the server drop without notice. 
 - The code you write will be in a remote location. If you want to keep it, you will need to download the edited notebooks from time to time, otherwise, all changes will be lost if you disconect (voluntarily or not) from the server.
 
 ## You already have Python
@@ -62,14 +64,14 @@ Using this service has some limitations:
 If you already have Python, you still need to do a couple of things.
 
 1. Make sure your Python version is 3.4 or higher. To check which python version you have, keep reading.
-2. Make sure you can access Python from the Terminal/Console/PowerShell - we'll call this with the generic name "the shell". To do so, open a shell and type `python --version`. If you get an error or a number that is not >3.4, then your python is not correctly configured (or the version is not high enough). I suggest you move to the next section. In some systems, you might need to use `python3 --version`.
+2. Make sure you can access Python from the Terminal/Console/PowerShell - we'll call this with the generic name of "shell". To do so, open a shell and type `python --version`. If you get an error or a number that is not >3.4, then your python is not correctly configured (or the version is not high enough). I suggest you move to the next section. In some systems, you might need to use `python3 --version`.
 3. If you reach this point, then you can now [install the dependencies](#installing-the-dependencies)
 
 ## Installing Python from scratch
 
-If you haven't used Python much - or nothing at all - chances are you want a brand new Python installation in your system. We want the newest Python version, which at the time of writing this guide is 3.8. How to do that depends on your operative system:
+If you haven't used Python much - or nothing at all - chances are you want a brand new Python installation in your system. Let's install the newest Python version, which at the time of writing this guide is 3.8. How to do that depends on your operative system:
 
-- **Linux**: You will need to use the package manager of your distribution. For Ubuntu, this will require you to open a shell and run `sudo apt install python3`. For other distributions, it will depend... Most likely, this will not be Python 3.8, but 3.7 - or even 3.6! That's Ok as long as it is >3.4. 
+- **Linux**: You will need to use the package manager of your distribution. For Ubuntu, this will require you to open a shell and run `sudo apt install python3`. For other distributions, it will depend... In some cases, this will not be Python 3.8, but 3.7 - or even 3.6! That's Ok as long as it is >3.4. 
 - **Windows and MacOS**: Go to [python.org](https://www.python.org), the oficial Python distribution, and download the installer appropriate for your OS. You can get Python by other means (Microsoft Store, Hombrew, MacPorts, Anaconda...). Don't bother and go to the basics. 
 
 **WARNING for WINDOWS USERS**: During the installation is absolutely essential that you **check the box that says "Add to PATH"**. Without this, your Python installation will not be found.
@@ -80,30 +82,34 @@ Now you are ready to install the dependencies.
 
 ## Installing the dependencies
 
-- Download this repository by clicking in the green button in the top right and unzip somewhere you know, eg. in your Documents folder. If you are a `git` user, navigate to the Documents folder in the shell and clone it with:
+Most pieces of software have dependencies: packages and libraries they need to run. In our case, we need to install Jupyter Lab, which is the interface we will use, and also numpy, matplotlib, scipy and pandas, the whole point of this workshop! 
+
+But, first, get this repository itself into your computer:
+
+- Download this repository by clicking in the green button in the top right (or [here](https://github.com/dalonsoa/SRUK_Research_Computing_Workshop/archive/master.zip)) and unzip it somewhere you know, eg. in your Documents folder. If you are a `git` user, navigate to the Documents folder in the shell and clone it with:
 
 ```bash
 git clone https://github.com/dalonsoa/SRUK_Research_Computing_Workshop.git
 ```
 
 - Now you should have all the files of the workshop in the folder `Documents/SRUK_Research_Computing_Workshop`. Enter into that folder in the shell with `cd SRUK_Research_Computing_Workshop`.
-- This workshop will use several python packages - among others, Numpy, Pandas, Matplotlib, etc. which are indeed the whole point of the workshop. You can find this dependencies in the `requirements.txt` file. To install these dependencies just run in the shell:
+- You can find this dependencies needed for this workshop in the `requirements.txt` file. To install these dependencies just run in the shell:
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-There will be a lot of text printed indicating that the dependencies - those in the requirements.txt file and many others that are required by these pacakges - are being downloaded and installed. Hopefully, there will be no errors. 
+There will be a lot of text printed indicating that the dependencies - those in the requirements.txt file and many others that are required by these pacakges themselves - are being downloaded and installed. Hopefully, there will be no errors. 
 
 ## Checking that everything works
 
-To check that everything has been installed properly, the best thing is for you to try to launch a Jupter Lab session. For that, without leaving the repository folder, run:
+To check that everything has been installed properly, the simplest thing is for you to try to launch a Jupter Lab session. For that, without leaving the repository folder, run:
 
 ```bash
 python -m jupyter lab
 ```
 
-A new tab should open in the web browser showing the Jupuyter Lab interface. If that is the case, congratulations!! You have succesfully installed all the requirements of this Workshop and have completed Lesson 0. Believe it or not, doing this has made you much wiser and proficient in Python. 
+A new tab should open in the web browser showing the Jupyter Lab interface. If that is the case, congratulations: You have succesfully installed all the requirements of this Workshop and have completed Lesson 0. Believe it or not, doing this has made you much wiser and proficient in Python. 
 
 In the final section of this document, we will just mention a couple of things on using Jupyter Notebooks. 
 
