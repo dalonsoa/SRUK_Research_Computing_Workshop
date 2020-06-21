@@ -95,7 +95,7 @@ If you haven't used Python much - or nothing at all - chances are you want a bra
 
     **WARNING for WINDOWS USERS**: Once you start the executable installer, you will see a new window popping up. 
     
-    <div style="text-align:center"><img src="images/installer.png" width="600" /><\div>
+    <div style="text-align:center"><img src="images/installer.png" width="600"></div>
     
     Please select "Add Python 3.8 to PATH" and "Install launcher for all users (recommend)" if they are not already ticked. We strongly recommend that you click "Install Now" instead of "Customize installation". By clicking the former (which requires administrator permissions), everything you need to have installed to run Python 3.8.3 will be installed - which might not happen if you customize your installation. Therefore, just let the executable installer do its magic for you :).
 
