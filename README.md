@@ -5,6 +5,7 @@
 # Index
 
 1. [About the workshop](#about-the-workshop)
+1. [Schedule](#schedule)
 1. [Setting up the environment](#setting-up-the-environment)
     1. [Without installing Python in your computer](#without-installing-python)
     1. [You already have Python installed](#you-already-have-python)
@@ -13,11 +14,10 @@
     1. [Checking that everything works](#checking-that-everything-works)
 1. [Using Jupyter Lab and Notebooks](#using-jupyter-lab-and-notebooks)
 
+
 # About the Workshop
 
-Welcome to this second event of the SRUK Research Computing Workshop series, devoted to Python. Python is programming language that has become one of the dominant tools in research and teaching thanks to its flexibility, simplicity, an
-
-d enormous supporting community. Specifically, this hands-on workshop will cover the following content:
+Welcome to this second event of the SRUK Research Computing Workshop series, devoted to Python. Python is programming language that has become one of the dominant tools in research and teaching thanks to its flexibility, simplicity, and enormous supporting community. Specifically, this hands-on workshop will cover the following content:
 
 - Brief introduction to the basics
 - Overview of Python packages and developing your own libraries
@@ -36,11 +36,28 @@ Join this event if you want to…
 If time allows, at the end of the workshop we will provide tips and resources for those wanting to expand their knowledge on other topics such as differential equation solving, parallel computing, machine learning, and deep learning.
 
 
+# Schedule
+
+Lessons will be uploaded on the 26th of June. You will need then to either update your local repository with `git pull` if you are a git user or [download the repository](https://github.com/dalonsoa/SRUK_Research_Computing_Workshop/archive/master.zip) as a zip file and unzip it. Please, **keep reading!**
+
+- **9:00 - Welcome and setting up**
+- 9:30 - Introduction
+- 9:45 - The basics
+- 10:30 - Python packages and modules
+- **11:15 - Coffee reak**
+- 11:30 - Functions
+- 12:10 - Classes
+- **13:00 - Lunch time!**
+- 14:00 - Numpy and Matplotlib
+- **15:15 - Coffee break**
+- 15:30 - Pandas
+- 16:30 - Scipy
+- 17:15 - Final remakrs
+- **17:30 - End of the event**
+
 # Setting up the environment
 
-**<p style="text-align: center;">Follow this instructions *BEFORE* the start of the course on the 27th of June.</p>**
-**<p style="text-align: center;">Contact us via Eventbrite if you have any trouble.</p>**
-
+### **<p style="text-align: center;">Follow this instructions *BEFORE* the start of the course on the 27th of June.<br>Contact us via Eventbrite if you have any trouble.</p>**
 The aim of this workshop is to provide you with the fundamental knowledge of the tools you will need to exploit Python in your research. **We want you to code along with us**, to try things and ask questions whenever you don't get the expected results. Chances are that other colleagues will be on the same situation. 
 
 To make this workshop as user friendly as possible, we will use [Jupyter](https://jupyter.org). In the [lessons folder](lessons) you can find the Jupyter Notebooks we have prepared. Notebooks combine text and explanations (including equations written in Latex, if needed) with executable code and its output, being this a bunch of numbers, some texts or plots. For this reason, it is becoming quite popular in the teaching environment. The [final section of this document](#using-jupyter-lab-and-notebooks) show a few tips on how to interact with the notebooks.
@@ -78,7 +95,7 @@ If you haven't used Python much - or nothing at all - chances are you want a bra
 
     **WARNING for WINDOWS USERS**: Once you start the executable installer, you will see a new window popping up. 
     
-    <img src="images/installer.png" width="600" />
+    <div style="text-align:center"><img src="images/installer.png" width="600" /><\dic>
     
     Please select "Add Python 3.8 to PATH" and "Install launcher for all users (recommend)" if they are not already ticked. We strongly recommend that you click "Install Now" instead of "Customize installation". By clicking the former (which requires administrator permissions), everything you need to have installed to run Python 3.8.3 will be installed - which might not happen if you customize your installation. Therefore, just let the executable installer do its magic for you :).
 
@@ -121,4 +138,18 @@ In the final section of this document, we will just mention a couple of things o
 
 # Using Jupyter Lab and Notebooks
 
-(To be Completed)
+Jupyter Lab is a very powerful programming and data analysis environment for Julia, Python and R (hence the name, more or less: **JU**lia**PYT**on(**E**)**R**, the "E" shouldn't be there...). We have installed support only for Python - which is the default - but if you are interested, you can check other options [here](https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html). You can allso get all the information from the "Help" entry on the Jupyter lab menu above.
+
+When you launch Jupyter lab, there're should be a new tab in your browser showing something similar to the folligin image. On the left, there'se a file browser that let you navigate across the folders and files that make up this repository. On the right hand side, you will see the same README file you saw in the GiHub repository (and that you are reading). 
+
+<div style="text-align:center"><img src=images/main.jpg width="600" /></div>
+
+If you double-click on the "lessons" entry on the left, you will enter into the lessons folder. If you double click on any of the lessons, a Jupyter Notebook will open as a new tab next to the README file. By the time you read this document, those lessons will probably be empty, but you will see the content from the 26th of June. 
+
+<div style="text-align:center"><img src=images/lessons.jpg width="600" /></div><div style="text-align:center"><img src=images/lesson_open.jpg width="600" /></div>
+    
+Lessons are writen as Jupyter Notebooks. These are documents divided in cells. Typically, these cells will be written in markdown - explanations -, python code - actuall code you can execute -, and output - the result (if any) of a python command. Cells are executted by pressing simultaneouslly `SHIFT + ENTER`. Pressing just `ENTER` only creates a new line within the current cell. 
+
+For all purposes, a cell writtern but not executed, does not exist: the code written there is ignored. Also, keep in mind that the execution order is important: a cell will know about things that have been **executed** before, even if they appear further down in a Notebook. If you want to reset the notebook, you need to re-star the kernel. On the Jupyter Lab menu click Kernel -> Restart Kernel. 
+    
+You can get a summary of all the shortcuts available in a Jupyter Notebook in [this cheatsheet](https://cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/). 
