@@ -72,11 +72,15 @@ If you already have Python, you still need to do a couple of things.
 If you haven't used Python much - or nothing at all - chances are you want a brand new Python installation in your system. Let's install the newest Python version, which at the time of writing this guide is 3.8. How to do that depends on your operative system:
 
 - **Linux**: You will need to use the package manager of your distribution. For Ubuntu, this will require you to open a shell and run `sudo apt install python3`. For other distributions, it will depend... In some cases, this will not be Python 3.8, but 3.7 - or even 3.6! That's Ok as long as it is >3.4. 
-- **Windows and MacOS**: Go to [python.org](https://www.python.org), the oficial Python distribution, and download the installer appropriate for your OS. You can get Python by other means (Microsoft Store, Hombrew, MacPorts, Anaconda...). Don't bother and go to the basics. 
+- **Windows and MacOS**: Go to [python.org](https://www.python.org), the official Python distribution, and download the installer appropriate for your OS. To install the latest version, just click the link under the section "Download" (you can also click [here](https://www.python.org/downloads/release/python-383/) for the latest version, v3.8.3 as of 2020-06-20) and scroll down until the bottom of the page. There, you will see the section "Files", where you can click the link to start the download according to your OS. While Mac users only have one link to download Python3 (click [here](https://www.python.org/ftp/python/3.8.3/python-3.8.3-macosx10.9.pkg)), Windows users have several options. We recommend them to download the executable installer (click [here](https://www.python.org/ftp/python/3.8.3/python-3.8.3-amd64.exe)).
 
-**WARNING for WINDOWS USERS**: During the installation is absolutely essential that you **check the box that says "Add to PATH"**. Without this, your Python installation will not be found.
+    **WARNING for WINDOWS USERS**: Once you start the executable installer, you will see a new window popping up. 
+    
+    <img src="images/installer.png" width="600" />
+    
+    Please select "Add Python 3.8 to PATH" and "Install launcher for all users (recommend)" if they are not already ticked. We strongly recommend that you click "Install Now" instead of "Customize installation". By clicking the former (which requires administrator permissions), everything you need to have installed to run Python 3.8.3 will be installed - which might not happen if you customize your installation. Therefore, just let the executable installer do its magic for you :).
 
-That should be it! If you open a shell and run `python --version` (or `python3 --version`) you should see the verion of Python you have just installed.
+That should be it! If you open a shell and run `python --version` (or `python3 --version`) you should see the version of Python you have just installed.
 
 Now you are ready to install the dependencies.
 
