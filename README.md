@@ -1,6 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dalonsoa/SRUK_Research_Computing_Workshop/master?urlpath=lab)
-
-<div style="text-align:center"><img src=https://sruk.org.uk/wp/wp-content/themes/sruk/images/logo-sruk.png /></div>
+[<div style="text-align:center"><img src=https://sruk.org.uk/wp/wp-content/themes/sruk/images/logo-sruk.png /></div>](https://www.sruk.org.uk)
 
 # <div style="text-align:center">SRUK Research Computing Workshop - Part 2<br>**Python**</div>
 
